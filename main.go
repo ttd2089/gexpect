@@ -21,7 +21,7 @@ const DefaultExprIsFmt = "actual <%+v>; expected <%+v>"
 // DefaultExprIsPrefixFmt is the default log message format for unmet expectations about arbitrary
 // value expressions when one additional argument is provided to the the expect function. This
 // format treats the additional argument as a prefix to the default format.
-const DefaultExprIsPrefixFmt = "%[3]v: actual <%[1]+v>; expected <%[2]+v>"
+const DefaultExprIsPrefixFmt = "%[3]v: actual <%+[1]v>; expected <%+[2]v>"
 
 // DefaultConfig generates a ready-to-use Config with sane defaults.
 func DefaultConfig() Config {
